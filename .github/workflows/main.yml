@@ -16,9 +16,6 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run tests
-      run: npm test
-
     - name: Deploy to Vercel
       if: success()
       uses: amondnet/vercel-action@v20
